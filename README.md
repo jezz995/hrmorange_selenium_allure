@@ -43,6 +43,6 @@ Test reports are generated with Allure to provide detailed insights and history 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/orangehrm-automation.git
+git clone [https://github.com/yourusername/orangehrm-automation.git](https://github.com/jezz995/hrmorange_selenium_allure.git)
 cd orangehrm-automation
 ```
