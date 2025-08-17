@@ -58,6 +58,24 @@ public abstract class BasePage {
         }
     }
 
+    // Generic wait for visibility
+    protected WebElement waitForVisibility(By locator) {
+        return new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // Generic wait for presence
+    protected WebElement waitForPresence(By locator) {
+        return new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT))
+                .until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    // If you want to override wait time
+    protected WebElement waitForVisibility(By locator, int seconds) {
+        return new WebDriverWait(driver, Duration.ofSeconds(seconds))
+                .until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
     // Helper method to clear and type text into an input field
     public void clearAndType(WebElement element, String text) {
         try {

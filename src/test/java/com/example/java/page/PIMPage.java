@@ -5,7 +5,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.time.Duration;
+import org.openqa.selenium.TimeoutException;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PIMPage extends BasePage {
 
@@ -21,6 +25,8 @@ public class PIMPage extends BasePage {
     private final By jobTitleField = By.cssSelector("input[placeholder='Job Title']");
     private final By employmentStatus = By.cssSelector("input[placeholder='Employment Status']");
     private final By supervisorField = By.cssSelector("input[placeholder='Supervisor']");
+    private final By searchButton = By.xpath("//button[normalize-space()='Search']");
+    private final By resetButton = By.xpath("//button[normalize-space()='Reset']");
 
     // locators for add employee form
     private final By addfirstNameField = By.cssSelector("input[placeholder='First Name']");
@@ -38,7 +44,13 @@ public class PIMPage extends BasePage {
     private final By addconfirmPasswordField = By.xpath("(//input[@type='password'])[2]");
 
     // validation locators
-    private final By personalDetailsHeader = By.cssSelector(".oxd-text.oxd-text--h6.--strong");
+    private final By profileName = By.cssSelector(".oxd-text.oxd-text--h6.--strong");
+
+    // error message locators
+    private final By employeeIdWarning = By.xpath(
+            "(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[1]");
+    private final By passwordStrengthLabel = By
+            .xpath("//span[@class='oxd-chip oxd-chip--default orangehrm-password-chip'])[1]");
 
     public PIMPage(WebDriver driver) {
         super(driver);
@@ -51,24 +63,51 @@ public class PIMPage extends BasePage {
     }
 
     // employee search
-    public void inputEmployeeName(String name) {
+    public PIMPage inputEmployeeName(String name) {
         inputHelper.waitAndInput(employeeNameField, name);
+        return this; // Return this for method chaining
     }
 
-    public void inputEmployeeId(String id) {
+    public PIMPage inputEmployeeId(String id) {
         inputHelper.waitAndInput(employeeIdField, id);
+        return this; // Return this for method chaining
     }
 
-    public void inputJobTitle(String title) {
+    public PIMPage inputJobTitle(String title) {
         inputHelper.waitAndInput(jobTitleField, title);
+        return this; // Return this for method chaining
     }
 
-    public void inputEmploymentStatus(String status) {
+    public PIMPage inputEmploymentStatus(String status) {
         inputHelper.waitAndInput(employmentStatus, status);
+        return this; // Return this for method chaining
     }
 
-    public void inputSupervisor(String supervisor) {
+    public PIMPage inputSupervisor(String supervisor) {
         inputHelper.waitAndInput(supervisorField, supervisor);
+        return this; // Return this for method chaining
+    }
+
+    public PIMPage clickSearchButton() {
+        clickHelper.waitUntilVisibleAndClick(searchButton);
+        return this; // Return this for method chaining
+    }
+
+    public PIMPage clickResetButton() {
+        clickHelper.waitUntilVisibleAndClick(resetButton);
+        return this; // Return this for method chaining
+    }
+
+    // high methods for employee search
+    public PIMPage searchEmployee(String name, String id, String title, String status, String supervisor) {
+        clickEmployeeListButton();
+        inputEmployeeName(name);
+        inputEmployeeId(id);
+        inputJobTitle(title);
+        inputEmploymentStatus(status);
+        inputSupervisor(supervisor);
+        clickSearchButton();
+        return this; // Return this for method chaining
     }
 
     // add employee methods
@@ -94,6 +133,11 @@ public class PIMPage extends BasePage {
 
     public PIMPage clickAddLoginDetailSlider() {
         clickHelper.waitUntilVisibleAndClick(addlogindetailslider);
+        return this; // Return this for method chaining
+    }
+
+    public PIMPage clickEmployeeListButton() {
+        clickHelper.waitUntilVisibleAndClick(employeeListButton);
         return this; // Return this for method chaining
     }
 
@@ -134,17 +178,18 @@ public class PIMPage extends BasePage {
     }
 
     // high methods to add employee
-    public void addEmployee(String firstName, String lastName, String username, String password,
+    public void addEmployee(String firstName, String lastName, String username, String password, String empId,
             String confirmPassword) {
         clickAddEmployeeButton();
         inputAddFirstName(firstName);
         inputAddLastName(lastName);
-        inputAddEmployeeId(""); // Assuming employee ID is auto-generated or not required
+        inputAddEmployeeId(empId); // Assuming employee ID is auto-generated or not
         clickAddLoginDetailSlider();
         inputAddUsername(username);
         inputAddPassword(password);
         inputAddConfirmPassword(confirmPassword);
         clickAddSaveButton();
+
     }
 
     // visibility checks ( Assertions)
@@ -214,12 +259,69 @@ public class PIMPage extends BasePage {
     }
 
     // validation checks
-    public boolean isEmployeeAdded() {
+    public boolean isEmployeeProfileDisplayed(String firstName, String lastName) {
         try {
-            WebElement header = getWait().until(
-                    ExpectedConditions.visibilityOfElementLocated(personalDetailsHeader));
-            return header.isDisplayed();
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15));
+
+            String expectedName = firstName + " " + lastName;
+
+            // Wait until the element contains the expected text
+            boolean isDisplayed = wait
+                    .until(ExpectedConditions.textToBePresentInElementLocated((profileName), expectedName));
+
+            return isDisplayed;
+
+        } catch (TimeoutException e) {
+            System.out.println("❌ Timeout: Profile name did not match expected text within 15 seconds.");
+            return false;
         } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    // Check for error message when adding employee with duplicate ID
+    public String getEmployeeIdWarningMessage() {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        WebElement warningMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(employeeIdWarning));
+        return warningMessage.getText();
+    }
+
+    public boolean isEmployeeIdWarningVisible(String expectedMessage) {
+        try {
+            String actualMessage = getEmployeeIdWarningMessage();
+            return actualMessage.equals(expectedMessage);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    // password strength label check
+    public String getPasswordStrengthLabel() {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        WebElement strengthLabel = wait.until(ExpectedConditions.visibilityOfElementLocated(passwordStrengthLabel));
+        return strengthLabel.getText();
+    }
+
+    public boolean isPasswordStrength(String expectedStrength) {
+        try {
+            return getPasswordStrengthLabel().equalsIgnoreCase(expectedStrength);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    // Check if employee is displayed in the employee list
+    public boolean isEmployeeDisplayedInList(String firstName, String lastName) {
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+            String fullName = firstName + " " + lastName;
+            // Wait until the employee name is present in the employee list
+            return wait.until(ExpectedConditions
+                    .textToBePresentInElementLocated(By.cssSelector(".oxd-table-cell.oxd-padding-cell"), fullName));
+        } catch (TimeoutException e) {
+            System.out.println(
+                    "❌ Timeout: Employee " + firstName + " " + lastName + " was not found in the employee list.");
             return false;
         }
     }

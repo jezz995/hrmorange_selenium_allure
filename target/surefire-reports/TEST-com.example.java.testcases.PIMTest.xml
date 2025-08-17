@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.java.testcases.PIMTest" time="26.521" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.example.java.testcases.PIMTest" time="134.756" tests="12" errors="0" skipped="8" failures="3">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.28.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\62812\AppData\Local\Temp\surefire869078514655149700\surefirebooter17033915559043229333.jar C:\Users\62812\AppData\Local\Temp\surefire869078514655149700 2025-08-16T23-36-17_450-jvmRun1 surefire12218310509783306453tmp surefire_016509906775662689075tmp"/>
+    <property name="sun.java.command" value="C:\Users\62812\AppData\Local\Temp\surefire16536815673803487785\surefirebooter9993887468928035163.jar C:\Users\62812\AppData\Local\Temp\surefire16536815673803487785 2025-08-17T20-58-26_522-jvmRun1 surefire16135479287689903305tmp surefire_0727015209048329283tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="PIMTest#testAddNewEmployee"/>
+    <property name="test" value="PIMTest"/>
     <property name="surefire.test.class.path" value="E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\test-classes;E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\classes;C:\Users\62812\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\62812\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\62812\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\62812\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\62812\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\62812\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\62812\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\62812\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\62812\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\62812\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\62812\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\62812\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\62812\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\62812\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\62812\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\62812\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\62812\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\62812\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\62812\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\62812\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\62812\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\62812\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\62812\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\62812\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-testng\2.24.0\allure-testng-2.24.0.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-java-commons\2.24.0\allure-java-commons-2.24.0.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-model\2.24.0\allure-model-2.24.0.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-test-filter\2.24.0\allure-test-filter-2.24.0.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-commandline\2.27.0\allure-commandline-2.27.0.jar;C:\Users\62812\.m2\repository\ch\qos\logback\logback-classic\1.3.14\logback-classic-1.3.14.jar;C:\Users\62812\.m2\repository\ch\qos\logback\logback-core\1.3.14\logback-core-1.3.14.jar;C:\Users\62812\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.16.1\jackson-databind-2.16.1.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.16.1\jackson-annotations-2.16.1.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.16.1\jackson-core-2.16.1.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.16.1\jackson-dataformat-yaml-2.16.1.jar;C:\Users\62812\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\62812\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\62812\.m2\repository\org\eclipse\jetty\jetty-server\9.4.53.v20231009\jetty-server-9.4.53.v20231009.jar;C:\Users\62812\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\62812\.m2\repository\org\eclipse\jetty\jetty-http\9.4.53.v20231009\jetty-http-9.4.53.v20231009.jar;C:\Users\62812\.m2\repository\org\eclipse\jetty\jetty-util\9.4.53.v20231009\jetty-util-9.4.53.v20231009.jar;C:\Users\62812\.m2\repository\org\eclipse\jetty\jetty-io\9.4.53.v20231009\jetty-io-9.4.53.v20231009.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-generator\2.27.0\allure-generator-2.27.0.jar;C:\Users\62812\.m2\repository\io\qameta\allure\allure-plugin-api\2.27.0\allure-plugin-api-2.27.0.jar;C:\Users\62812\.m2\repository\com\opencsv\opencsv\4.6\opencsv-4.6.jar;C:\Users\62812\.m2\repository\org\apache\commons\commons-text\1.3\commons-text-1.3.jar;C:\Users\62812\.m2\repository\commons-beanutils\commons-beanutils\1.9.3\commons-beanutils-1.9.3.jar;C:\Users\62812\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\62812\.m2\repository\org\apache\commons\commons-collections4\4.2\commons-collections4-4.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark\0.62.2\flexmark-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.62.2\flexmark-util-ast-0.62.2.jar;C:\Users\62812\.m2\repository\org\jetbrains\annotations\15.0\annotations-15.0.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.62.2\flexmark-util-builder-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.62.2\flexmark-util-collection-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.62.2\flexmark-util-data-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.62.2\flexmark-util-dependency-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.62.2\flexmark-util-format-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.62.2\flexmark-util-html-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.62.2\flexmark-util-misc-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.62.2\flexmark-util-sequence-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.62.2\flexmark-util-visitor-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.62.2\flexmark-ext-tables-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util\0.62.2\flexmark-util-0.62.2.jar;C:\Users\62812\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.62.2\flexmark-util-options-0.62.2.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-xml\2.16.1\jackson-dataformat-xml-2.16.1.jar;C:\Users\62812\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\62812\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.5.1\woodstox-core-6.5.1.jar;C:\Users\62812\.m2\repository\com\fasterxml\jackson\module\jackson-module-jaxb-annotations\2.16.1\jackson-module-jaxb-annotations-2.16.1.jar;C:\Users\62812\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\62812\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\62812\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\62812\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\62812\.m2\repository\org\allurefw\allure1-model\1.0\allure1-model-1.0.jar;C:\Users\62812\.m2\repository\ru\qatools\commons\properties\2.0.RC5\properties-2.0.RC5.jar;C:\Users\62812\.m2\repository\com\github\baev\jaxb-utils\1.0\jaxb-utils-1.0.jar;C:\Users\62812\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\62812\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\62812\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\62812\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\62812\.m2\repository\org\apache\tika\tika-core\2.9.1\tika-core-2.9.1.jar;C:\Users\62812\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-java\4.34.0\selenium-java-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-api\4.34.0\selenium-api-4.34.0.jar;C:\Users\62812\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.34.0\selenium-chrome-driver-4.34.0.jar;C:\Users\62812\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.34.0\selenium-chromium-driver-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-json\4.34.0\selenium-json-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.34.0\selenium-manager-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v136\4.34.0\selenium-devtools-v136-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v137\4.34.0\selenium-devtools-v137-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v138\4.34.0\selenium-devtools-v138-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.34.0\selenium-edge-driver-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.34.0\selenium-firefox-driver-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-http\4.34.0\selenium-http-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.34.0\selenium-ie-driver-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.34.0\selenium-remote-driver-4.34.0.jar;C:\Users\62812\.m2\repository\com\google\guava\guava\33.4.8-jre\guava-33.4.8-jre.jar;C:\Users\62812\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\62812\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\62812\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\62812\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-api\1.51.0\opentelemetry-api-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-context\1.51.0\opentelemetry-context-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.51.0\opentelemetry-exporter-logging-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.51.0\opentelemetry-sdk-common-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.51.0\opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.51.0\opentelemetry-sdk-extension-autoconfigure-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.51.0\opentelemetry-sdk-trace-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.51.0\opentelemetry-sdk-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.51.0\opentelemetry-sdk-metrics-1.51.0.jar;C:\Users\62812\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.51.0\opentelemetry-sdk-logs-1.51.0.jar;C:\Users\62812\.m2\repository\net\bytebuddy\byte-buddy\1.17.6\byte-buddy-1.17.6.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-os\4.34.0\selenium-os-4.34.0.jar;C:\Users\62812\.m2\repository\org\apache\commons\commons-exec\1.5.0\commons-exec-1.5.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.34.0\selenium-safari-driver-4.34.0.jar;C:\Users\62812\.m2\repository\org\seleniumhq\selenium\selenium-support\4.34.0\selenium-support-4.34.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\62812"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\62812\AppData\Local\Temp\surefire869078514655149700\surefirebooter17033915559043229333.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\62812\AppData\Local\Temp\surefire16536815673803487785\surefirebooter9993887468928035163.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.28+6"/>
@@ -62,5 +62,246 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testAddNewEmployee" classname="com.example.java.testcases.PIMTest" time="10.311"/>
+  <testcase name="testAddNewEmployee" classname="com.example.java.testcases.PIMTest" time="10.214"/>
+  <testcase name="testAddNewEmployeeWithDuplicateEmployeeId" classname="com.example.java.testcases.PIMTest" time="3.868">
+    <failure message="Employee was added with a duplicate employee ID, which is not expected. expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Employee was added with a duplicate employee ID, which is not expected. expected [true] but found [false]
+	at com.example.java.testcases.PIMTest.testAddNewEmployeeWithDuplicateEmployeeId(PIMTest.java:73)
+</failure>
+    <system-out><![CDATA[? Test passed: testAddNewEmployee
+Launching browser: chrome
+>>>Running test: PIMTest.testAddNewEmployeeWithDuplicateEmployeeId
+Auto-login as admin for test: PIMTest.testAddNewEmployeeWithDuplicateEmployeeId
+Logged in as Admin successfully.
+? Starting test: testAddNewEmployeeWithDuplicateEmployeeId
+]]></system-out>
+    <system-err><![CDATA[Failed to save screenshot: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployee.png
+java.nio.file.FileAlreadyExistsException: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployee.png
+	at java.base/sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:123)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:283)
+	at java.base/java.nio.file.Files.copy(Files.java:1295)
+	at com.example.java.utilities.Screenshot.takeScreenshot(Screenshot.java:28)
+	at com.example.java.base.TestListener.captureScreenshot(TestListener.java:31)
+	at com.example.java.base.TestListener.onTestSuccess(TestListener.java:51)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+	at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Aug 17, 2025 8:59:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="testAddNewEmployeeWithMissingFirstName" classname="com.example.java.testcases.PIMTest" time="24.539">
+    <failure message="Employee was added without a first name, which is not expected. expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: Employee was added without a first name, which is not expected. expected [true] but found [false]
+	at com.example.java.testcases.PIMTest.testAddNewEmployeeWithMissingFirstName(PIMTest.java:52)
+</failure>
+    <system-out><![CDATA[? Test failed: testAddNewEmployeeWithDuplicateEmployeeId
+Screenshot saved: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithDuplicateEmployeeId_failure.png
+Launching browser: chrome
+>>>Running test: PIMTest.testAddNewEmployeeWithMissingFirstName
+Auto-login as admin for test: PIMTest.testAddNewEmployeeWithMissingFirstName
+Logged in as Admin successfully.
+? Starting test: testAddNewEmployeeWithMissingFirstName
+? Timeout: Profile name did not match expected text within 15 seconds.
+]]></system-out>
+    <system-err><![CDATA[Failed to save screenshot: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithDuplicateEmployeeId_failure.png
+java.nio.file.FileAlreadyExistsException: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithDuplicateEmployeeId_failure.png
+	at java.base/sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:123)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:283)
+	at java.base/java.nio.file.Files.copy(Files.java:1295)
+	at com.example.java.utilities.Screenshot.takeScreenshot(Screenshot.java:28)
+	at com.example.java.base.BaseTest.tearDown(BaseTest.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Aug 17, 2025 8:59:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="com.example.java.testcases.PIMTest" time="45.167">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}&#10;  (Session info: chrome=139.0.7258.128)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()=&apos;Dashboard&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h6[normalize-space()='Dashboard']"}
+  (Session info: chrome=139.0.7258.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.28'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd
+</failure>
+    <system-out><![CDATA[? Test failed: testAddNewEmployeeWithMissingFirstName
+Screenshot saved: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithMissingFirstName_failure.png
+Launching browser: chrome
+>>>Running test: PIMTest.testAddNewEmployeeWithMissingLastName
+Auto-login as admin for test: PIMTest.testAddNewEmployeeWithMissingLastName
+]]></system-out>
+    <system-err><![CDATA[Failed to save screenshot: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithMissingFirstName_failure.png
+java.nio.file.FileAlreadyExistsException: E:\BANGKIT\DATA_Bangkit\belajar terus bree\Automation-learn\hrmorange_selenium_allure_1\target\screenshots\testAddNewEmployeeWithMissingFirstName_failure.png
+	at java.base/sun.nio.fs.WindowsFileCopy.copy(WindowsFileCopy.java:123)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.copy(WindowsFileSystemProvider.java:283)
+	at java.base/java.nio.file.Files.copy(Files.java:1295)
+	at com.example.java.utilities.Screenshot.takeScreenshot(Screenshot.java:28)
+	at com.example.java.base.BaseTest.tearDown(BaseTest.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Aug 17, 2025 8:59:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="setUpPIMPage" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUpPIMPage" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[?? Test skipped: testAddNewEmployeeWithMissingLastName
+Launching browser: chrome
+>>>Running test: PIMTest.testAddNewEmployeeWithWeakPassword
+Auto-login as admin for test: PIMTest.testAddNewEmployeeWithWeakPassword
+Logged in as Admin successfully.
+]]></system-out>
+    <system-err><![CDATA[Aug 17, 2025 9:00:13 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="setUpPIMPage" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[?? Test skipped: testAddNewEmployeeWithWeakPassword
+Launching browser: chrome
+>>>Running test: PIMTest.testCheckEmployeeOnEmployeeList
+Auto-login as admin for test: PIMTest.testCheckEmployeeOnEmployeeList
+Logged in as Admin successfully.
+]]></system-out>
+    <system-err><![CDATA[Aug 17, 2025 9:00:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="setUpPIMPage" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped/>
+    <system-out><![CDATA[?? Test skipped: testCheckEmployeeOnEmployeeList
+Launching browser: chrome
+>>>Running test: PIMTest.testNavigateToPIM
+Auto-login as admin for test: PIMTest.testNavigateToPIM
+Logged in as Admin successfully.
+]]></system-out>
+    <system-err><![CDATA[Aug 17, 2025 9:00:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+  </testcase>
+  <testcase name="testAddNewEmployeeWithMissingLastName" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}&#10;  (Session info: chrome=139.0.7258.128)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()=&apos;Dashboard&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd"/>
+    <system-out><![CDATA[? Starting test: testAddNewEmployeeWithMissingLastName
+]]></system-out>
+  </testcase>
+  <testcase name="testAddNewEmployeeWithWeakPassword" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}&#10;  (Session info: chrome=139.0.7258.128)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()=&apos;Dashboard&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd"/>
+    <system-out><![CDATA[? Starting test: testAddNewEmployeeWithWeakPassword
+]]></system-out>
+  </testcase>
+  <testcase name="testCheckEmployeeOnEmployeeList" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}&#10;  (Session info: chrome=139.0.7258.128)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()=&apos;Dashboard&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd"/>
+    <system-out><![CDATA[? Starting test: testCheckEmployeeOnEmployeeList
+]]></system-out>
+  </testcase>
+  <testcase name="testNavigateToPIM" classname="com.example.java.testcases.PIMTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}&#10;  (Session info: chrome=139.0.7258.128)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [6bd6e344c1f77fc2f191f80a0e6c3fcd, findElement {using=xpath, value=//h6[normalize-space()=&apos;Dashboard&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.68 (40ff94600b6e..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62119}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62119/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6bd6e344c1f77fc2f191f80a0e6c3fcd"/>
+    <system-out><![CDATA[? Starting test: testNavigateToPIM
+]]></system-out>
+  </testcase>
 </testsuite>

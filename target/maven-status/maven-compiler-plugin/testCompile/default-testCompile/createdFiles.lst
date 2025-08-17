@@ -9,7 +9,6 @@ com\example\java\utilities\Screenshot.class
 com\example\java\helpers\WaitInputHelper.class
 com\example\java\page\PIMPage.class
 com\example\java\page\DashboardPage.class
-com\example\java\testcases\PIMTest.class
 com\example\java\base\CommonSteps.class
 com\example\java\helpers\GetTextHelper.class
 com\example\java\helpers\ScrollHelper.class

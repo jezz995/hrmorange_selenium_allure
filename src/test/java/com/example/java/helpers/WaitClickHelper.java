@@ -11,13 +11,13 @@ public class WaitClickHelper {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public WaitClickHelper(WebDriver driver, int defaultTimeout){
+    public WaitClickHelper(WebDriver driver, int timeoutSeconds) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(defaultTimeout));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     /** Wait until element is clickable and click it */
-    public void waitUntilClickableAndClick(By locator){
+    public void waitUntilClickableAndClick(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
     }

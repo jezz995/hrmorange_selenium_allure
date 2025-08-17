@@ -35,32 +35,21 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.CRITICAL)
         @Test(description = "Verify adding a new employee")
         public void testAddNewEmployee() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddFirstName("John")
-                                .inputAddLastName("Doe")
-                                .inputAddEmployeeId("0911") // Assuming employee ID is required
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("JohnDoe113")
-                                .inputAddPassword("password123")
-                                .inputAddConfirmPassword("password123")
-                                .clickAddSaveButton();
+                pimPage.addEmployee("Jake", "eagle", "jakeRTY", "H@lo123!!!", "100000001", "H@lo123!!!");
+                String firstName = "Jake";
+                String lastName = "eagle";
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(), "New employee was not added successfully.");
+                Assert.assertTrue(pimPage.isEmployeeProfileDisplayed(firstName, lastName),
+                                "Employee " + firstName + " " + lastName + " was not displayed on profile panel.");
         }
 
         @Story("Add New Employee With Missing First name")
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with missing first name")
         public void testAddNewEmployeeWithMissingFirstName() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddLastName("Doe")
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("johndoe")
-                                .inputAddPassword("password123")
-                                .inputAddConfirmPassword("password123")
-                                .clickAddSaveButton();
+                pimPage.addEmployee("", "lisa", "lisa999", "H@lo123!!!", "6745", "H@lo123!!!");
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(),
+                Assert.assertTrue(pimPage.isEmployeeProfileDisplayed("", "lisa"),
                                 "Employee was added without a first name, which is not expected.");
         }
 
@@ -68,15 +57,9 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with missing last name")
         public void testAddNewEmployeeWithMissingLastName() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddFirstName("John")
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("johndoe")
-                                .inputAddPassword("password123")
-                                .inputAddConfirmPassword("password123")
-                                .clickAddSaveButton();
+                pimPage.addEmployee("Rissa", "", "Rissa88", "H@lo123!!!", "6799", "H@lo123!!!");
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(),
+                Assert.assertTrue(pimPage.isEmployeeProfileDisplayed("Rissa", ""),
                                 "Employee was added without a last name, which is not expected.");
         }
 
@@ -84,17 +67,10 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with a duplicate employee ID")
         public void testAddNewEmployeeWithDuplicateEmployeeId() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddFirstName("Jane")
-                                .inputAddLastName("Doe")
-                                .inputAddEmployeeId("0999") // Using the same ID as in the previous test
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("janedoe")
-                                .inputAddPassword("password123")
-                                .inputAddConfirmPassword("password123")
-                                .clickAddSaveButton();
+                String expectedMessage = "Employee ID already exists";
+                pimPage.addEmployee("Diamond", "jack", "jack9090", "H@lo123!!!", "100000001", "H@lo123!!!");
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(),
+                Assert.assertTrue(pimPage.isEmployeeIdWarningVisible(expectedMessage),
                                 "Employee was added with a duplicate employee ID, which is not expected.");
         }
 
@@ -102,35 +78,24 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with a weak password")
         public void testAddNewEmployeeWithWeakPassword() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddFirstName("Alice")
-                                .inputAddLastName("Smith")
-                                .inputAddEmployeeId("1001")
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("alicesmith")
-                                .inputAddPassword("12345") // Weak password
-                                .clickAddSaveButton();
+                String expectedStrength = "Weak";
+                pimPage.addEmployee("Yunus", "mahmud", "Yunus18", "password1234", "896788", "password1234");
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(),
-                                "Employee was added with a weak password, which is not expected.");
+                Assert.assertTrue(pimPage.isPasswordStrength(expectedStrength),
+                                "Password Strength was not '" + expectedStrength + "'");
         }
 
-        @Story("Add New Employee with invalid characters in first name")
+        @Story("check employee on employee list")
         @Severity(SeverityLevel.NORMAL)
-        @Test(description = "Verify adding a new employee with invalid characters in first name")
-        public void testAddNewEmployeeWithInvalidFirstName() {
-                pimPage.clickAddEmployeeButton()
-                                .inputAddFirstName("John@Doe") // Invalid characters in first name
-                                .inputAddLastName("Smith")
-                                .inputAddEmployeeId("1002")
-                                .clickAddLoginDetailSlider()
-                                .inputAddUsername("johnsmith")
-                                .inputAddPassword("password123")
-                                .inputAddConfirmPassword("password123")
-                                .clickAddSaveButton();
+        @Test(description = "Verify employee is displayed on employee list")
+        public void testCheckEmployeeOnEmployeeList() {
+                pimPage.searchEmployee("Jake", "909088", "", "", "");
+                String firstName = "Jake";
+                String lastName = "eagle";
 
-                Assert.assertTrue(pimPage.isEmployeeAdded(),
-                                "Employee was added with invalid characters in first name, which is not expected.");
+                Assert.assertTrue(pimPage.isEmployeeDisplayedInList(firstName, lastName),
+                                "Employee " + firstName + " " + lastName + " was not displayed on employee list.");
+
         }
 
 }

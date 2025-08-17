@@ -6,9 +6,14 @@
       <class name="com.example.java.testcases.PIMTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testAddNewEmployee"/>
+          <include name="testAddNewEmployeeWithMissingLastName"/>
+          <include name="testCheckEmployeeOnEmployeeList"/>
+          <include name="testAddNewEmployeeWithDuplicateEmployeeId"/>
+          <include name="testAddNewEmployeeWithWeakPassword"/>
           <include name="setUp"/>
           <include name="setUpPIMPage"/>
+          <include name="testAddNewEmployeeWithMissingFirstName"/>
+          <include name="testNavigateToPIM"/>
         </methods>
       </class> <!-- com.example.java.testcases.PIMTest -->
     </classes>
