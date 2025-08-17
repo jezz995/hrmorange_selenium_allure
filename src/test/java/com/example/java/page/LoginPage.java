@@ -14,9 +14,14 @@ public class LoginPage extends BasePage {
     private final By password = By.cssSelector("input[placeholder='Password']");
     private final By btnLogin = By.cssSelector("button[type='submit']");
     private final By errorMsg = By.cssSelector(".oxd-text.oxd-text--p.oxd-alert-content-text");
+    private final By dashboardHeader = By.xpath("//h6[normalize-space()='Dashboard']");
 
     public LoginPage(WebDriver driver) {
         super(driver);
+    }
+
+    public WebElement getDashboardElement() {
+        return getDriver().findElement(dashboardHeader);
     }
 
     /** Navigate to login page and wait until username field is visible */

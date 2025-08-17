@@ -1,8 +1,15 @@
 package com.example.java.page;
 
 import com.example.java.helpers.*;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
 
@@ -41,5 +48,25 @@ public abstract class BasePage {
     /** Getter for centralized WebDriverWait */
     protected WebDriverWait getWait() {
         return wait;
+    }
+
+    protected boolean isElementVisible(By locator) {
+        try {
+            return getWait().until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
+        } catch (TimeoutException | NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    // Helper method to clear and type text into an input field
+    public void clearAndType(WebElement element, String text) {
+        try {
+            element.clear(); // coba cara biasa
+        } catch (Exception e) {
+            // kalau gagal, pakai ctrl+a + delete
+            element.sendKeys(Keys.CONTROL + "a");
+            element.sendKeys(Keys.DELETE);
+        }
+        element.sendKeys(text);
     }
 }

@@ -1,6 +1,9 @@
 package com.example.java.base;
 
 import com.example.java.utilities.Screenshot;
+import com.example.java.page.LoginPage;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -8,10 +11,12 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.NoSuchWindowException;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import java.lang.reflect.Method;
 
 import java.time.Duration;
 
@@ -40,7 +45,7 @@ public class BaseTest {
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp() {
+    public void setUp(Method method) {
         String browser = System.getProperty("browser", "chrome").toLowerCase();
         System.out.println("Launching browser: " + browser);
 
@@ -57,6 +62,20 @@ public class BaseTest {
         }
 
         setDriver(driver);
+
+        // print debug info
+        String className = method.getDeclaringClass().getSimpleName();
+        String testName = method.getName();
+        System.out.println(">>>Running test: " + className + "." + testName);
+
+        // skip auto-login for LoginTest
+        if (className.equals("LoginTest")) {
+            System.out.println("Skipping auto-login for LoginTest");
+        } else {
+            System.out.println("Auto-login as admin for test: " + className + "." + testName);
+            loginAsAdmin();
+        }
+
     }
 
     @AfterMethod(alwaysRun = true)
@@ -82,5 +101,20 @@ public class BaseTest {
                 driverThreadLocal.remove();
             }
         }
+
+    }
+
+    // Global login helper for admin
+    // This can be used in test cases to log in as admin
+    protected void loginAsAdmin() {
+        LoginPage loginPage = new LoginPage(getDriver());
+        loginPage.navigateToLogin();
+        loginPage.loginAs("Admin", "admin123");
+
+        // wait for dashboard to load
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOf(loginPage.getDashboardElement()));
+
+        System.out.println("Logged in as Admin successfully.");
     }
 }
