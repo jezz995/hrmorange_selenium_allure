@@ -8,12 +8,13 @@ public class TestDataProvider {
     public static Object[][] employeeData() {
         return new Object[][] {
                 // firstName, lastName, empId, username, password, expectedResult
-                { "Rachel", "Sasongko", "0399", "rachelsas", "password123", true }, // Valid
-                { "", "Doe", "0400", "johndoe", "password123", false }, // Missing first name
-                { "John", "", "0401", "johnny", "password123", false }, // Missing last name
-                { "Jane", "Doe", "0399", "janedoe", "password123", false }, // Duplicate Employee ID
-                { "Alice", "Smith", "0402", "alicesmith", "12345", false }, // Weak password
-                { "Bob@", "Marley", "0403", "bobmarley", "password123", false } // Invalid character in first name
+                { "Rachel", "Sasongko", "0399", "rachelsas", "H@lo123!!!", "H@lo123!!!", true }, // Valid
+                { "", "Doe", "0400", "johndoe", "H@lo123!!!", "H@lo123!!!", false }, // Missing first name
+                { "John", "", "0401", "johnny", "H@lo123!!!", "H@lo123!!!", false }, // Missing last name
+                { "Jane", "Doe", "0399", "janedoe", "H@lo123!!!", "H@lo123!!!", false }, // Duplicate Employee ID
+                { "Alice", "Smith", "0402", "alicesmith", "Password12345", "Password12345", false }, // Weak password
+                { "Bob@", "Marley", "0403", "bobmarley", "H@lo123!!!", "H@lo123!!!", false } // Invalid character in
+                                                                                             // first name
         };
     }
 }

@@ -31,7 +31,8 @@ public class PIMPage extends BasePage {
     // locators for add employee form
     private final By addfirstNameField = By.cssSelector("input[placeholder='First Name']");
     private final By addlastNameField = By.cssSelector("input[placeholder='Last Name']");
-    private final By addemployeeidField = By.xpath("//input[@class='oxd-input oxd-input--focus']");
+    private final By addemployeeidField = By.cssSelector(
+            "div[class='oxd-input-group oxd-input-field-bottom-space'] div input[class='oxd-input oxd-input--active']");
     private final By addsaveButton = By.xpath("(//button[normalize-space()='Save'])[1]");
     private final By addcancelButton = By
             .cssSelector("button[class='oxd-button oxd-button--medium oxd-button--ghost']");
@@ -51,6 +52,8 @@ public class PIMPage extends BasePage {
             "(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[1]");
     private final By passwordStrengthLabel = By
             .xpath("//span[@class='oxd-chip oxd-chip--default orangehrm-password-chip'])[1]");
+    private final By firtsNameMissingError = By
+            .xpath("(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'])[1]");
 
     public PIMPage(WebDriver driver) {
         super(driver);
@@ -178,7 +181,7 @@ public class PIMPage extends BasePage {
     }
 
     // high methods to add employee
-    public void addEmployee(String firstName, String lastName, String username, String password, String empId,
+    public void addEmployee(String firstName, String lastName, String empId, String username, String password,
             String confirmPassword) {
         clickAddEmployeeButton();
         inputAddFirstName(firstName);
@@ -322,6 +325,17 @@ public class PIMPage extends BasePage {
         } catch (TimeoutException e) {
             System.out.println(
                     "❌ Timeout: Employee " + firstName + " " + lastName + " was not found in the employee list.");
+            return false;
+        }
+    }
+
+    // Check if the first name missing error is displayed
+    public boolean isFirstNameMissingErrorDisplayed() {
+        try {
+            WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(firtsNameMissingError)).isDisplayed();
+        } catch (TimeoutException e) {
+            System.out.println("❌ Timeout: First name missing error was not displayed.");
             return false;
         }
     }

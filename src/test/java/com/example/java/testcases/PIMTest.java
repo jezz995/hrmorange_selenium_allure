@@ -35,7 +35,7 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.CRITICAL)
         @Test(description = "Verify adding a new employee")
         public void testAddNewEmployee() {
-                pimPage.addEmployee("Jake", "eagle", "jakeRTY", "H@lo123!!!", "100000001", "H@lo123!!!");
+                pimPage.addEmployee("Danny", "lockheed", "danny890", "H@lo123!!!", "90088", "H@lo123!!!");
                 String firstName = "Jake";
                 String lastName = "eagle";
 
@@ -47,9 +47,9 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with missing first name")
         public void testAddNewEmployeeWithMissingFirstName() {
-                pimPage.addEmployee("", "lisa", "lisa999", "H@lo123!!!", "6745", "H@lo123!!!");
+                pimPage.addEmployee("", "lisa", "7890", "lisa9090", "H@lo123!!!", "H@lo123!!!");
 
-                Assert.assertTrue(pimPage.isEmployeeProfileDisplayed("", "lisa"),
+                Assert.assertTrue(pimPage.isFirstNameMissingErrorDisplayed(),
                                 "Employee was added without a first name, which is not expected.");
         }
 
@@ -57,7 +57,7 @@ public class PIMTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         @Test(description = "Verify adding a new employee with missing last name")
         public void testAddNewEmployeeWithMissingLastName() {
-                pimPage.addEmployee("Rissa", "", "Rissa88", "H@lo123!!!", "6799", "H@lo123!!!");
+                pimPage.addEmployee("Rissa", "", "6799", "Rissa888", "H@lo123!!!", "H@lo123!!!");
 
                 Assert.assertTrue(pimPage.isEmployeeProfileDisplayed("Rissa", ""),
                                 "Employee was added without a last name, which is not expected.");
@@ -68,7 +68,7 @@ public class PIMTest extends BaseTest {
         @Test(description = "Verify adding a new employee with a duplicate employee ID")
         public void testAddNewEmployeeWithDuplicateEmployeeId() {
                 String expectedMessage = "Employee ID already exists";
-                pimPage.addEmployee("Diamond", "jack", "jack9090", "H@lo123!!!", "100000001", "H@lo123!!!");
+                pimPage.addEmployee("Diamond", "jack", "100000001", "jack9090", "H@lo123!!!", "H@lo123!!!");
 
                 Assert.assertTrue(pimPage.isEmployeeIdWarningVisible(expectedMessage),
                                 "Employee was added with a duplicate employee ID, which is not expected.");
@@ -79,7 +79,7 @@ public class PIMTest extends BaseTest {
         @Test(description = "Verify adding a new employee with a weak password")
         public void testAddNewEmployeeWithWeakPassword() {
                 String expectedStrength = "Weak";
-                pimPage.addEmployee("Yunus", "mahmud", "Yunus18", "password1234", "896788", "password1234");
+                pimPage.addEmployee("Yunus", "mahmud", "896788", "Yunus18", "password1234", "password1234");
 
                 Assert.assertTrue(pimPage.isPasswordStrength(expectedStrength),
                                 "Password Strength was not '" + expectedStrength + "'");
