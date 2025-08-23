@@ -6,25 +6,20 @@ import java.time.Duration;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.apache.commons.collections4.Get;
 import org.openqa.selenium.By;
 
 public class DashboardPage extends BasePage {
     private WebDriverWait wait;
 
-    private static final String DASHBOARD_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"; // Update
-                                                                                                                           // with
-                                                                                                                           // actual
-                                                                                                                           // URL
+    private static final String DASHBOARD_URL = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 
     // Locators
-    private By dashboardHeader = By
-            .xpath("//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][normalize-space()='Dashboard']");
+    private By dashboardButton = By.xpath("//a[normalize-space()='Dashboard']");
     private By userDropdown = By.className("oxd-userdropdown-name");
     private By logoutButton = By.xpath("//a[normalize-space()='Logout']");
     private By adminButton = By.xpath("//a[normalize-space()='Admin']");
     private By pimButton = By.xpath("//span[normalize-space()='PIM']");
-    private By leaveButton = By.xpath("//button[normalize-space()='Leave']");
+    private By leaveButton = By.xpath("//span[normalize-space()='Leave']");
     private By timeButton = By.xpath("//span[normalize-space()='Time']");
     private By recruitmentButton = By.xpath("//span[normalize-space()='Recruitment']");
     private By performanceButton = By.xpath("//span[normalize-space()='Performance']");
@@ -32,6 +27,7 @@ public class DashboardPage extends BasePage {
     private By directoryButton = By.xpath("//span[normalize-space()='Directory']");
     private By maintenanceButton = By.xpath("//span[normalize-space()='Maintenance']");
 
+    private By dashBoardPageHeader = By.xpath("//h6[normalize-space()='Dashboard']");
     private By adminPageHeader = By.xpath("//h6[normalize-space()='Admin']");
     private By pimPageHeader = By.xpath("//h6[normalize-space()='PIM']");
     private By leavePageHeader = By.xpath("//h6[normalize-space()='Leave']");
@@ -47,49 +43,65 @@ public class DashboardPage extends BasePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void navigateToDashboard() {
+    // Navigate to the dashboard page
+    public DashboardPage navigateToDashboard() {
         driver.get(DASHBOARD_URL);
-        getWait().until(ExpectedConditions.urlToBe(DASHBOARD_URL));
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(dashBoardPageHeader));
+        return this;
     }
 
-    public void clickAdminButton() {
+    public DashboardPage clickDashboardButton() {
+        wait.until(ExpectedConditions.elementToBeClickable(dashboardButton)).click();
+        return this;
+    }
+
+    public DashboardPage clickAdminButton() {
         wait.until(ExpectedConditions.elementToBeClickable(adminButton)).click();
+        return this;
     }
 
-    public void clickPIMButton() {
+    public DashboardPage clickPIMButton() {
         wait.until(ExpectedConditions.elementToBeClickable(pimButton)).click();
+        return this;
     }
 
-    public void clickLeaveButton() {
+    public DashboardPage clickLeaveButton() {
         wait.until(ExpectedConditions.elementToBeClickable(leaveButton)).click();
+        return this;
     }
 
-    public void clickTimeButton() {
+    public DashboardPage clickTimeButton() {
         wait.until(ExpectedConditions.elementToBeClickable(timeButton)).click();
+        return this;
     }
 
-    public void clickRecruitmentButton() {
+    public DashboardPage clickRecruitmentButton() {
         wait.until(ExpectedConditions.elementToBeClickable(recruitmentButton)).click();
+        return this;
     }
 
-    public void clickPerformanceButton() {
+    public DashboardPage clickPerformanceButton() {
         wait.until(ExpectedConditions.elementToBeClickable(performanceButton)).click();
+        return this;
     }
 
-    public void clickMyInfoButton() {
+    public DashboardPage clickMyInfoButton() {
         wait.until(ExpectedConditions.elementToBeClickable(myInfoButton)).click();
+        return this;
     }
 
-    public void clickDirectoryButton() {
+    public DashboardPage clickDirectoryButton() {
         wait.until(ExpectedConditions.elementToBeClickable(directoryButton)).click();
+        return this;
     }
 
-    public void clickMaintenanceButton() {
+    public DashboardPage clickMaintenanceButton() {
         wait.until(ExpectedConditions.elementToBeClickable(maintenanceButton)).click();
+        return this;
     }
 
     public WebElement getDashboardHeader() {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader));
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(dashBoardPageHeader));
     }
 
     // Validation
@@ -207,7 +219,7 @@ public class DashboardPage extends BasePage {
     // Verify if the dashboard header is visible after login
     public boolean isDashboardHeaderVisible() {
         try {
-            WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(dashboardHeader));
+            WebElement header = wait.until(ExpectedConditions.visibilityOfElementLocated(dashBoardPageHeader));
             return header.isDisplayed();
         } catch (TimeoutException e) {
             System.out.println("Dashboard header not visible after login.");

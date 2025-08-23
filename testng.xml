@@ -8,8 +8,14 @@
             <class name="com.example.java.testcases.LoginTest"/>
         </classes>
     </test>
+    <test name="Dashboard-Section-Test">
+    <classes>
+        <class name="com.example.java.testcases.DashboardTest"/>
+    </classes>
+    </test>
     <test name="PIM-Section-Test">
         <classes>
             <class name="com.example.java.testcases.PIMTest"/>
         </classes>
+        </test>
 </suite>

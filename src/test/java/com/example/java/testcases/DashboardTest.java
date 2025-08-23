@@ -2,8 +2,6 @@ package com.example.java.testcases;
 
 import com.example.java.page.DashboardPage;
 import com.example.java.base.BaseTest;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import io.qameta.allure.*;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -21,8 +19,7 @@ public class DashboardTest extends BaseTest {
 
     @BeforeMethod
     public void setUpDashboardPage() {
-        WebDriver driver = new ChromeDriver(); // Initialize WebDriver
-        dashboardPage = new DashboardPage(driver);
+        dashboardPage = new DashboardPage(getDriver());
         dashboardPage.navigateToDashboard();
     }
 

@@ -13,7 +13,7 @@ public class WaitClickHelper {
 
     public WaitClickHelper(WebDriver driver, int timeoutSeconds) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     /** Wait until element is clickable and click it */

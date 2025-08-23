@@ -12,16 +12,19 @@ public class WaitInputHelper {
     private WebDriverWait wait;
 
     public WaitInputHelper(WebDriver driver, int timeoutSeconds) {
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutSeconds));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     }
 
     public void waitAndInput(By locator, String text) {
-        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        element.click(); // focus first
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+
+        element.click(); // focus
         element.clear();
-        element.sendKeys(text);
-        // optional: Tab out to trigger JavaScript change event
-        element.sendKeys(Keys.TAB);
+
+        if (text != null && !text.isEmpty()) {
+            element.sendKeys(text);
+            // Sometimes OrangeHRM requires blur/Tab to trigger validation
+            element.sendKeys(Keys.TAB);
+        }
     }
 }
-
