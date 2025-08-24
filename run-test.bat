@@ -12,7 +12,7 @@ if exist report-history\history (
 )
 
 REM Generate report baru ke folder report-history
-allure generate target\allure-results --clean -o report-history
+allure generate allure-results --clean -o report-history
 
 REM Kembalikan history ke report baru
 if exist temp-history\history (

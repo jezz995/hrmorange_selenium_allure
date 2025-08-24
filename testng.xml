@@ -3,14 +3,14 @@
         <listeners>
         <listener class-name="com.example.java.base.TestListener"/>
        </listeners>
-    <test name="Login-Section-Test">
+    <test name="Dashboard-Section-Test">
         <classes>
-            <class name="com.example.java.testcases.LoginTest"/>
+            <class name="com.example.java.testcases.DashboardTest"/>
         </classes>
     </test>
-    <test name="Dashboard-Section-Test">
+    <test name="Login-Section-Test ">
     <classes>
-        <class name="com.example.java.testcases.DashboardTest"/>
+        <class name="com.example.java.testcases.LoginTest"/>
     </classes>
     </test>
     <test name="PIM-Section-Test">

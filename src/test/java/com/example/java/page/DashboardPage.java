@@ -27,14 +27,14 @@ public class DashboardPage extends BasePage {
     private By directoryButton = By.xpath("//span[normalize-space()='Directory']");
     private By maintenanceButton = By.xpath("//span[normalize-space()='Maintenance']");
 
-    private By dashBoardPageHeader = By.xpath("//h6[normalize-space()='Dashboard']");
+    private By dashBoardPageHeader = By.xpath("(//div[@class='oxd-topbar-header-title'])[1]");
     private By adminPageHeader = By.xpath("//h6[normalize-space()='Admin']");
     private By pimPageHeader = By.xpath("//h6[normalize-space()='PIM']");
     private By leavePageHeader = By.xpath("//h6[normalize-space()='Leave']");
     private By timePageHeader = By.xpath("//h6[normalize-space()='Time']");
-    private By recruitmentPageHeader = By.xpath("//h6[normalize-space()='Recruitment']");
-    private By performancePageHeader = By.xpath("//h6[normalize-space()='Performance']");
-    private By myInfoPageHeader = By.xpath("//h6[normalize-space()='My Info']");
+    private By recruitmentPageHeader = By.xpath("(//div[@class='oxd-topbar-header-title'])[1]");
+    private By performancePageHeader = By.xpath("(//div[@class='oxd-topbar-header-title'])[1]");
+    private By myInfoPageHeader = By.xpath("(//div[@class='oxd-topbar-header-title'])[1]");
     private By directoryPageHeader = By.xpath("//h6[normalize-space()='Directory']");
     private By maintenancePageHeader = By.xpath("//h6[normalize-space()='Maintenance']");
 

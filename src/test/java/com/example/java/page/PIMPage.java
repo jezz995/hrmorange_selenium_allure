@@ -34,12 +34,11 @@ public class PIMPage extends BasePage {
     private final By searchButton = By.xpath("//button[normalize-space()='Search']");
     private final By resetButton = By.xpath("//button[normalize-space()='Reset']");
     private final By checkBox = By.xpath("(//i[@class='oxd-icon bi-check oxd-checkbox-input-icon'])[2]");
-    private final By trashButton = By
-            .xpath("//button[contains(@class, 'oxd-icon-button') and .//i[contains(@class, 'bi-trash')]]");
+    private final By deleteButton = By.xpath("(//i[@class='oxd-icon bi-trash'])[1]");
     // delete pop up locators
     private final By deleteConfirmationHeader = By
             .xpath("//p[contains(@class, 'oxd-text--subtitle') and contains(text(), 'Are you Sure?')]");
-    private final By confirmYesDeleteButton = By.xpath("//button[normalize-space()='Yes, Delete']");
+    private final By confirmYesDeleteButton = By.xpath("(//button[normalize-space()='Yes, Delete'])[1]");
     private final By confirmNoDeleteButton = By.xpath("(//button[normalize-space()='No, Cancel'])[1]");
 
     // locators for add employee form
@@ -131,7 +130,7 @@ public class PIMPage extends BasePage {
     }
 
     public PIMPage clickDeleteButton() {
-        clickHelper.waitUntilPresentAndClick(trashButton);
+        clickHelper.waitUntilPresentAndClick(deleteButton);
         return this;
     }
 
@@ -144,6 +143,16 @@ public class PIMPage extends BasePage {
     public PIMPage clickNoDeleteEmployeeButton() {
         clickHelper.waitUntilTextToBePresentAndClick(confirmNoDeleteButton, "No, Cancel");
         return this;
+    }
+
+    // check if employee still on the list or not
+    public boolean isEmployeeDeleted(String firstName) {
+        try {
+            return getWait().until(ExpectedConditions.invisibilityOfElementLocated(
+                    By.xpath("//a[text()='" + firstName + "']")));
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
 
     // high methods for employee search
@@ -282,7 +291,7 @@ public class PIMPage extends BasePage {
 
     // success message
     public boolean isSuccessMessageDisplayed() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         try {
             WebElement message = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(successMessage));

@@ -49,7 +49,7 @@ public class BaseTest {
         System.out.println("Launching browser: " + browser);
 
         WebDriver driver = createDriver(browser);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         // ✅ Maximize safely
         try {

@@ -24,7 +24,7 @@ public class PIMTest extends BaseTest {
         }
 
         @Story("Navigate to PIM Page")
-        @Severity(SeverityLevel.NORMAL)
+        @Severity(SeverityLevel.CRITICAL)
         @Test(description = "Verify navigation to PIM page")
         public void testNavigateToPIM() {
                 pimPage.navigateToPIM();
@@ -61,12 +61,18 @@ public class PIMTest extends BaseTest {
         @Test(description = "Employee data can be deleted from the employee list")
         public void testDeleteEmployeeOnTheEmployeeList() {
                 pimPage.searchEmployee("Ronnie", "944800", "", "", "");
+                String firstName = "Ronnie";
                 pimPage.clickDeleteButton();
                 pimPage.clickYesDeleteEmployeeButton();
 
                 Assert.assertTrue(
                                 pimPage.isSuccessMessageDisplayed(),
                                 "Success message was not displayed after deleting the employee.");
+
+                pimPage.searchEmployee("Ronnie", "944800", "", "", "");
+
+                Assert.assertFalse(pimPage.isEmployeeDeleted(firstName), "Employee with first name '" + firstName
+                                + "' still appears in the list after deletion.");
 
         }
 
