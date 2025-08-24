@@ -33,7 +33,8 @@ public class PIMPage extends BasePage {
     private final By supervisorField = By.cssSelector("input[placeholder='Supervisor']");
     private final By searchButton = By.xpath("//button[normalize-space()='Search']");
     private final By resetButton = By.xpath("//button[normalize-space()='Reset']");
-    private final By checkBox = By.xpath("(//i[@class='oxd-icon bi-check oxd-checkbox-input-icon'])[2]");
+    private final By checkBox = By.xpath(
+            "(//span[@class='oxd-checkbox-input oxd-checkbox-input--active --label-right oxd-checkbox-input'])[2]");
     private final By deleteButton = By.xpath("(//i[@class='oxd-icon bi-trash'])[1]");
     // delete pop up locators
     private final By deleteConfirmationHeader = By
@@ -58,8 +59,8 @@ public class PIMPage extends BasePage {
 
     // Employee details locator
     private final By EmployeedetailsJobButton = By.xpath("//a[normalize-space()='Job']");
-    private final By EmployeedetailsJobTitleButton = By.cssSelector(
-            "div[class='orangehrm-edit-employee-content'] div:nth-child(2) div:nth-child(1) div:nth-child(2) div:nth-child(1) div:nth-child(1) div:nth-child(2) i:nth-child(1)");
+    private final By EmployeedetailsJobTitleButton = By
+            .xpath("(//div[@class='oxd-select-text-input'][normalize-space()='-- Select --'])[1]");
     private final By jobTitleOptions = By.xpath("//div[@role='listbox']//span");
     private final By EmployeedetailsSaveButton = By.cssSelector("button[type='submit']");
 
