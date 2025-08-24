@@ -8,18 +8,11 @@
     <classes>
       <class name="com.example.java.testcases.DashboardTest">
         <methods>
-          <include name="testClickMyInfoButton"/>
           <include name="tearDown"/>
-          <include name="testClickPIMButton"/>
           <include name="setUpDashboardPage"/>
-          <include name="testClickLeaveButton"/>
           <include name="testClickTimeButton"/>
-          <include name="testClickRecruitmentButton"/>
           <include name="testNavigateToDashboard"/>
-          <include name="testClickPerformanceButton"/>
           <include name="setUp"/>
-          <include name="testClickDirectoryButton"/>
-          <include name="testClickAdminButton"/>
         </methods>
       </class> <!-- com.example.java.testcases.DashboardTest -->
     </classes>
@@ -29,12 +22,9 @@
       <class name="com.example.java.testcases.PIMTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testCheckEmployeeOnEmployeeList"/>
-          <include name="testAddNewEmployee"/>
           <include name="setUp"/>
           <include name="testDeleteEmployeeOnTheEmployeeList"/>
           <include name="setUpPIMPage"/>
-          <include name="testNavigateToPIM"/>
         </methods>
       </class> <!-- com.example.java.testcases.PIMTest -->
     </classes>

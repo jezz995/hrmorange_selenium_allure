@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" class="navigator-link">
-              <span class="suite-name border-skipped">OrangeHRM Automation Suite</span>
+              <span class="suite-name border-failed">OrangeHRM Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods,  13 skipped,  7 passed</span>
+                    <span class="method-stats">20 methods, 1 failed,  2 skipped,  17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" class="hide-methods failed suite-OrangeHRM_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM_Automation_Suite -->
+                      <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" class="show-methods failed suite-OrangeHRM_Automation_Suite"> (show)</a> <!-- show-methods failed suite-OrangeHRM_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testDeleteEmployeeOnTheEmployeeList">testDeleteEmployeeOnTheEmployeeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM_Automation_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -103,67 +117,12 @@
                     <div class="method-list-content skipped suite-OrangeHRM_Automation_Suite">
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testAddNewEmployee">testAddNewEmployee</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testCheckEmployeeOnEmployeeList">testCheckEmployeeOnEmployeeList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickAdminButton">testClickAdminButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickDirectoryButton">testClickDirectoryButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickLeaveButton">testClickLeaveButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickMyInfoButton">testClickMyInfoButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickPIMButton">testClickPIMButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickPerformanceButton">testClickPerformanceButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickRecruitmentButton">testClickRecruitmentButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickTimeButton">testClickTimeButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testDeleteEmployeeOnTheEmployeeList">testDeleteEmployeeOnTheEmployeeList</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testNavigateToDashboard">testNavigateToDashboard</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testNavigateToPIM">testNavigateToPIM</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-OrangeHRM_Automation_Suite -->
@@ -175,6 +134,51 @@
                       <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" class="show-methods passed suite-OrangeHRM_Automation_Suite"> (show)</a> <!-- show-methods passed suite-OrangeHRM_Automation_Suite -->
                     </span>
                     <div class="method-list-content passed suite-OrangeHRM_Automation_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testAddNewEmployee">testAddNewEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testCheckEmployeeOnEmployeeList">testCheckEmployeeOnEmployeeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickAdminButton">testClickAdminButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickDirectoryButton">testClickDirectoryButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickLeaveButton">testClickLeaveButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickMyInfoButton">testClickMyInfoButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickPIMButton">testClickPIMButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickPerformanceButton">testClickPerformanceButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.DashboardTest" class="method navigator-link" hash-for-method="testClickRecruitmentButton">testClickRecruitmentButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.LoginTest" class="method navigator-link" hash-for-method="testEmptyFields">testEmptyFields</a> <!-- method navigator-link -->
@@ -202,6 +206,11 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.PIMTest" class="method navigator-link" hash-for-method="testNavigateToPIM">testNavigateToPIM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM_Automation_Suite" title="com.example.java.testcases.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -222,6 +231,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM_Automation_Suite" class="panel OrangeHRM_Automation_Suite">
+          <div class="suite-OrangeHRM_Automation_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.java.testcases.PIMTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteEmployeeOnTheEmployeeList">
+                  </a> <!-- testDeleteEmployeeOnTheEmployeeList -->
+                  <span class="method-name">testDeleteEmployeeOnTheEmployeeList</span>
+                  <div class="stack-trace">java.lang.AssertionError: Employee with first name &apos;Ronnie&apos; still appears in the list after deletion. expected [false] but found [true]
+	at com.example.java.testcases.PIMTest.testDeleteEmployeeOnTheEmployeeList(PIMTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Employee data can be deleted from the employee list)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Automation_Suite-class-failed -->
           <div class="suite-OrangeHRM_Automation_Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -230,263 +261,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testClickAdminButton">
-                  </a> <!-- testClickAdminButton -->
-                  <span class="method-name">testClickAdminButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [44198819e3d8d899e89560abf94603f6, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49170}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49170/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 44198819e3d8d899e89560abf94603f6
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking Admin button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickDirectoryButton">
-                  </a> <!-- testClickDirectoryButton -->
-                  <span class="method-name">testClickDirectoryButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb756c11e31d39847b7cd6de9cad7962, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb756c11e31d39847b7cd6de9cad7962
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking Directory button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickLeaveButton">
-                  </a> <!-- testClickLeaveButton -->
-                  <span class="method-name">testClickLeaveButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eb756c11e31d39847b7cd6de9cad7962, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49197/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb756c11e31d39847b7cd6de9cad7962
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking Leave button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickMyInfoButton">
-                  </a> <!-- testClickMyInfoButton -->
-                  <span class="method-name">testClickMyInfoButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1520c768296ea332ef668ca932243e4, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62107/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1520c768296ea332ef668ca932243e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking My Info button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickPIMButton">
-                  </a> <!-- testClickPIMButton -->
-                  <span class="method-name">testClickPIMButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e1520c768296ea332ef668ca932243e4, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62107}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62107/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e1520c768296ea332ef668ca932243e4
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking PIM button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickPerformanceButton">
-                  </a> <!-- testClickPerformanceButton -->
-                  <span class="method-name">testClickPerformanceButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5cf87b59407e0c42bcb9a3e4edca86a, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f5cf87b59407e0c42bcb9a3e4edca86a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking Performance button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClickRecruitmentButton">
-                  </a> <!-- testClickRecruitmentButton -->
-                  <span class="method-name">testClickRecruitmentButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5cf87b59407e0c42bcb9a3e4edca86a, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f5cf87b59407e0c42bcb9a3e4edca86a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Verify clicking Recruitment button)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testClickTimeButton">
                   </a> <!-- testClickTimeButton -->
                   <span class="method-name">testClickTimeButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
   (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f5cf87b59407e0c42bcb9a3e4edca86a, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62164/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f5cf87b59407e0c42bcb9a3e4edca86a
+Command: [ce2bd4ffccd27fba5680e671be67e53a, findElement {using=css selector, value=input[placeholder=&apos;Username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50499/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce2bd4ffccd27fba5680e671be67e53a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -498,11 +284,14 @@ Session ID: f5cf87b59407e0c42bcb9a3e4edca86a
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.example.java.page.LoginPage.navigateToLogin(LoginPage.java:30)
+	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:110)
+	at com.example.java.base.BaseTest.setUp(BaseTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
+... Removed 39 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Verify clicking Time button)                  </em>
@@ -513,15 +302,15 @@ Session ID: f5cf87b59407e0c42bcb9a3e4edca86a
                   <a name="testNavigateToDashboard">
                   </a> <!-- testNavigateToDashboard -->
                   <span class="method-name">testNavigateToDashboard</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
   (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [67151b2b5de7d1829d988056f99f9f45, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62246}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62246/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 67151b2b5de7d1829d988056f99f9f45
+Command: [ce2bd4ffccd27fba5680e671be67e53a, findElement {using=css selector, value=input[placeholder=&apos;Username&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50499}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50499/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce2bd4ffccd27fba5680e671be67e53a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -533,11 +322,14 @@ Session ID: 67151b2b5de7d1829d988056f99f9f45
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at com.example.java.page.LoginPage.navigateToLogin(LoginPage.java:30)
+	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:110)
+	at com.example.java.base.BaseTest.setUp(BaseTest.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 38 stack frames
+... Removed 39 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Verify navigation to Dashboard page)                  </em>
@@ -545,9 +337,9 @@ Session ID: 67151b2b5de7d1829d988056f99f9f45
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-OrangeHRM_Automation_Suite-class-skipped -->
-          <div class="suite-OrangeHRM_Automation_Suite-class-skipped">
+          <div class="suite-OrangeHRM_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.example.java.testcases.PIMTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -556,32 +348,6 @@ Session ID: 67151b2b5de7d1829d988056f99f9f45
                   <a name="testAddNewEmployee">
                   </a> <!-- testAddNewEmployee -->
                   <span class="method-name">testAddNewEmployee</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e03ed7a63d92da8229089dd5c4c5f2ef, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62291}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62291/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e03ed7a63d92da8229089dd5c4c5f2ef
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Verify adding a new employee)                  </em>
                 </div> <!-- method-content -->
@@ -591,69 +357,8 @@ Session ID: e03ed7a63d92da8229089dd5c4c5f2ef
                   <a name="testCheckEmployeeOnEmployeeList">
                   </a> <!-- testCheckEmployeeOnEmployeeList -->
                   <span class="method-name">testCheckEmployeeOnEmployeeList</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b1e0268f7136c2e4e60df248b8a0b6e5, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60663}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60663/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Verify employee is displayed on employee list)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDeleteEmployeeOnTheEmployeeList">
-                  </a> <!-- testDeleteEmployeeOnTheEmployeeList -->
-                  <span class="method-name">testDeleteEmployeeOnTheEmployeeList</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b1e0268f7136c2e4e60df248b8a0b6e5, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60663}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60663/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Employee data can be deleted from the employee list)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -661,38 +366,83 @@ Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
                   <a name="testNavigateToPIM">
                   </a> <!-- testNavigateToPIM -->
                   <span class="method-name">testNavigateToPIM</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[normalize-space()=&apos;Dashboard&apos;]&quot;}
-  (Session info: chrome=139.0.7258.128)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.28&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b1e0268f7136c2e4e60df248b8a0b6e5, findElement {value=//h6[normalize-space()=&apos;Dashboard&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.128, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\62812\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60663}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60663/devtoo..., se:cdpVersion: 139.0.7258.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at com.example.java.page.LoginPage.getDashboardElement(LoginPage.java:24)
-	at com.example.java.base.BaseTest.loginAsAdmin(BaseTest.java:122)
-	at com.example.java.base.BaseTest.setUp(BaseTest.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 37 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Verify navigation to PIM page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OrangeHRM_Automation_Suite-class-skipped -->
+          </div> <!-- suite-OrangeHRM_Automation_Suite-class-passed -->
+          <div class="suite-OrangeHRM_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.example.java.testcases.DashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickAdminButton">
+                  </a> <!-- testClickAdminButton -->
+                  <span class="method-name">testClickAdminButton</span>
+                  <em>
+(Verify clicking Admin button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickDirectoryButton">
+                  </a> <!-- testClickDirectoryButton -->
+                  <span class="method-name">testClickDirectoryButton</span>
+                  <em>
+(Verify clicking Directory button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickLeaveButton">
+                  </a> <!-- testClickLeaveButton -->
+                  <span class="method-name">testClickLeaveButton</span>
+                  <em>
+(Verify clicking Leave button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickMyInfoButton">
+                  </a> <!-- testClickMyInfoButton -->
+                  <span class="method-name">testClickMyInfoButton</span>
+                  <em>
+(Verify clicking My Info button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickPIMButton">
+                  </a> <!-- testClickPIMButton -->
+                  <span class="method-name">testClickPIMButton</span>
+                  <em>
+(Verify clicking PIM button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickPerformanceButton">
+                  </a> <!-- testClickPerformanceButton -->
+                  <span class="method-name">testClickPerformanceButton</span>
+                  <em>
+(Verify clicking Performance button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClickRecruitmentButton">
+                  </a> <!-- testClickRecruitmentButton -->
+                  <span class="method-name">testClickRecruitmentButton</span>
+                  <em>
+(Verify clicking Recruitment button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM_Automation_Suite-class-passed -->
           <div class="suite-OrangeHRM_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -777,16 +527,16 @@ Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.example.java.base.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Login-Section-Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.example.java.testcases.LoginTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Login-Section-Test --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Dashboard-Section-Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.java.testcases.DashboardTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Dashboard-Section-Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login-Section-Test &quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.java.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login-Section-Test  --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PIM-Section-Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.java.testcases.PIMTest&quot;/&gt;
@@ -803,10 +553,10 @@ Session ID: b1e0268f7136c2e4e60df248b8a0b6e5
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Login-Section-Test (1 class)</span>
+                <span class="test-name">Dashboard-Section-Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Dashboard-Section-Test (1 class)</span>
+                <span class="test-name">Login-Section-Test  (1 class)</span>
               </li>
               <li>
                 <span class="test-name">PIM-Section-Test (1 class)</span>
@@ -837,84 +587,84 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'userLogout')
-data.setCell(0, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(0, 3, 15440);
+data.setCell(0, 1, 'testDeleteEmployeeOnTheEmployeeList')
+data.setCell(0, 2, 'com.example.java.testcases.PIMTest')
+data.setCell(0, 3, 18536);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidLogin')
-data.setCell(1, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(1, 3, 11127);
+data.setCell(1, 1, 'testAddNewEmployee')
+data.setCell(1, 2, 'com.example.java.testcases.PIMTest')
+data.setCell(1, 3, 12600);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testInvalidPassword')
+data.setCell(2, 1, 'userLogout')
 data.setCell(2, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(2, 3, 9148);
+data.setCell(2, 3, 10574);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testInvalidUsername')
+data.setCell(3, 1, 'testInvalidPassword')
 data.setCell(3, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(3, 3, 8830);
+data.setCell(3, 3, 8558);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testEmptyFields')
+data.setCell(4, 1, 'testInvalidUsername')
 data.setCell(4, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(4, 3, 7261);
+data.setCell(4, 3, 7535);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testEmptyFieldsPassword')
+data.setCell(5, 1, 'testValidLogin')
 data.setCell(5, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(5, 3, 7094);
+data.setCell(5, 3, 5751);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testEmptyFieldsUsername')
+data.setCell(6, 1, 'testEmptyFieldsPassword')
 data.setCell(6, 2, 'com.example.java.testcases.LoginTest')
-data.setCell(6, 3, 5706);
+data.setCell(6, 3, 5713);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testClickMyInfoButton')
-data.setCell(7, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(7, 3, 1);
+data.setCell(7, 1, 'testEmptyFields')
+data.setCell(7, 2, 'com.example.java.testcases.LoginTest')
+data.setCell(7, 3, 4670);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testClickPIMButton')
-data.setCell(8, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'testEmptyFieldsUsername')
+data.setCell(8, 2, 'com.example.java.testcases.LoginTest')
+data.setCell(8, 3, 4394);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testClickTimeButton')
+data.setCell(9, 1, 'testClickAdminButton')
 data.setCell(9, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(9, 3, 0);
+data.setCell(9, 3, 2971);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testClickAdminButton')
+data.setCell(10, 1, 'testClickDirectoryButton')
 data.setCell(10, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(10, 3, 0);
+data.setCell(10, 3, 2604);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testNavigateToDashboard')
-data.setCell(11, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'testCheckEmployeeOnEmployeeList')
+data.setCell(11, 2, 'com.example.java.testcases.PIMTest')
+data.setCell(11, 3, 2306);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'testClickLeaveButton')
 data.setCell(12, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 3, 1836);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testClickPerformanceButton')
-data.setCell(13, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'testNavigateToPIM')
+data.setCell(13, 2, 'com.example.java.testcases.PIMTest')
+data.setCell(13, 3, 1737);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testClickDirectoryButton')
+data.setCell(14, 1, 'testClickMyInfoButton')
 data.setCell(14, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(14, 3, 0);
+data.setCell(14, 3, 1601);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testClickRecruitmentButton')
+data.setCell(15, 1, 'testClickPIMButton')
 data.setCell(15, 2, 'com.example.java.testcases.DashboardTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 3, 1579);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testCheckEmployeeOnEmployeeList')
-data.setCell(16, 2, 'com.example.java.testcases.PIMTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'testClickRecruitmentButton')
+data.setCell(16, 2, 'com.example.java.testcases.DashboardTest')
+data.setCell(16, 3, 1576);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testDeleteEmployeeOnTheEmployeeList')
-data.setCell(17, 2, 'com.example.java.testcases.PIMTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'testClickPerformanceButton')
+data.setCell(17, 2, 'com.example.java.testcases.DashboardTest')
+data.setCell(17, 3, 1576);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testNavigateToPIM')
-data.setCell(18, 2, 'com.example.java.testcases.PIMTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 1, 'testClickTimeButton')
+data.setCell(18, 2, 'com.example.java.testcases.DashboardTest')
+data.setCell(18, 3, 1);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testAddNewEmployee')
-data.setCell(19, 2, 'com.example.java.testcases.PIMTest')
+data.setCell(19, 1, 'testNavigateToDashboard')
+data.setCell(19, 2, 'com.example.java.testcases.DashboardTest')
 data.setCell(19, 3, 0);
 window.suiteTableData['OrangeHRM_Automation_Suite']= { tableData: data, tableDiv: 'times-div-OrangeHRM_Automation_Suite'}
 return data;
@@ -946,330 +696,308 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.java.testcases.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFields())</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testEmptyFields</span>
-                <span class="method-start">6788 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testEmptyFields status=SUCCESS method=LoginTest.testEmptyFields()[pri:0, instance:c...)</span>
-                <span class="method-start">14273 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFieldsPassword())</span>
-                <span class="method-start">15553 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testEmptyFieldsPassword</span>
-                <span class="method-start">17808 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testEmptyFieldsPassword status=SUCCESS method=LoginTest.testEmptyFieldsPassword()[p...)</span>
-                <span class="method-start">25183 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFieldsUsername())</span>
-                <span class="method-start">27578 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testEmptyFieldsUsername</span>
-                <span class="method-start">29853 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testEmptyFieldsUsername status=SUCCESS method=LoginTest.testEmptyFieldsUsername()[p...)</span>
-                <span class="method-start">35732 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testInvalidPassword())</span>
-                <span class="method-start">36251 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidPassword</span>
-                <span class="method-start">38486 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testInvalidPassword status=SUCCESS method=LoginTest.testInvalidPassword()[pri:0, in...)</span>
-                <span class="method-start">47793 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testInvalidUsername())</span>
-                <span class="method-start">48499 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testInvalidUsername</span>
-                <span class="method-start">50709 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testInvalidUsername status=SUCCESS method=LoginTest.testInvalidUsername()[pri:0, in...)</span>
-                <span class="method-start">59698 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testValidLogin())</span>
-                <span class="method-start">60372 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testValidLogin</span>
-                <span class="method-start">62498 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:0, instance:com...)</span>
-                <span class="method-start">73964 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.userLogout())</span>
-                <span class="method-start">74745 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">userLogout</span>
-                <span class="method-start">76729 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=userLogout status=SUCCESS method=LoginTest.userLogout()[pri:0, instance:com.example...)</span>
-                <span class="method-start">92348 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.example.java.testcases.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickAdminButton())</span>
-                <span class="method-start">92841 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">102683 ms</span>
+                <span class="method-start">12298 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickAdminButton</span>
-                <span class="method-start">102688 ms</span>
+                <span class="method-start">14214 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickAdminButton status=SKIP method=DashboardTest.testClickAdminButton()[pri:0,...)</span>
-                <span class="method-start">102693 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickAdminButton status=SUCCESS method=DashboardTest.testClickAdminButton()[pri...)</span>
+                <span class="method-start">17422 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickDirectoryButton())</span>
-                <span class="method-start">102946 ms</span>
+                <span class="method-start">18199 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">114077 ms</span>
+                <span class="method-start">26209 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickDirectoryButton</span>
-                <span class="method-start">114081 ms</span>
+                <span class="method-start">27621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickDirectoryButton status=SKIP method=DashboardTest.testClickDirectoryButton(...)</span>
-                <span class="method-start">114086 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickDirectoryButton status=SUCCESS method=DashboardTest.testClickDirectoryButt...)</span>
+                <span class="method-start">30557 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickLeaveButton())</span>
-                <span class="method-start">114545 ms</span>
+                <span class="method-start">30771 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">124025 ms</span>
+                <span class="method-start">38667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickLeaveButton</span>
-                <span class="method-start">124029 ms</span>
+                <span class="method-start">40177 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickLeaveButton status=SKIP method=DashboardTest.testClickLeaveButton()[pri:0,...)</span>
-                <span class="method-start">124036 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickLeaveButton status=SUCCESS method=DashboardTest.testClickLeaveButton()[pri...)</span>
+                <span class="method-start">42213 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickMyInfoButton())</span>
-                <span class="method-start">124466 ms</span>
+                <span class="method-start">42583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">134909 ms</span>
+                <span class="method-start">51082 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickMyInfoButton</span>
-                <span class="method-start">134913 ms</span>
+                <span class="method-start">52730 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickMyInfoButton status=SKIP method=DashboardTest.testClickMyInfoButton()[pri:...)</span>
-                <span class="method-start">134918 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickMyInfoButton status=SUCCESS method=DashboardTest.testClickMyInfoButton()[p...)</span>
+                <span class="method-start">54557 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickPIMButton())</span>
-                <span class="method-start">135754 ms</span>
+                <span class="method-start">55079 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">144799 ms</span>
+                <span class="method-start">64892 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickPIMButton</span>
-                <span class="method-start">144801 ms</span>
+                <span class="method-start">66444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickPIMButton status=SKIP method=DashboardTest.testClickPIMButton()[pri:0, ins...)</span>
-                <span class="method-start">144806 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickPIMButton status=SUCCESS method=DashboardTest.testClickPIMButton()[pri:0, ...)</span>
+                <span class="method-start">68232 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickPerformanceButton())</span>
-                <span class="method-start">145434 ms</span>
+                <span class="method-start">68614 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">156294 ms</span>
+                <span class="method-start">78165 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickPerformanceButton</span>
-                <span class="method-start">156296 ms</span>
+                <span class="method-start">79846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickPerformanceButton status=SKIP method=DashboardTest.testClickPerformanceBut...)</span>
-                <span class="method-start">156299 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickPerformanceButton status=SUCCESS method=DashboardTest.testClickPerformance...)</span>
+                <span class="method-start">81602 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickRecruitmentButton())</span>
-                <span class="method-start">156792 ms</span>
+                <span class="method-start">81959 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">165148 ms</span>
+                <span class="method-start">91793 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickRecruitmentButton</span>
-                <span class="method-start">165150 ms</span>
+                <span class="method-start">93467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClickRecruitmentButton status=SKIP method=DashboardTest.testClickRecruitmentBut...)</span>
-                <span class="method-start">165154 ms</span>
+                <span class="method-name">tearDown([TestResult name=testClickRecruitmentButton status=SUCCESS method=DashboardTest.testClickRecruitment...)</span>
+                <span class="method-start">95234 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testClickTimeButton())</span>
-                <span class="method-start">165985 ms</span>
+                <span class="method-start">95602 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">173979 ms</span>
+                <span class="method-start">106858 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClickTimeButton</span>
-                <span class="method-start">173981 ms</span>
+                <span class="method-start">106867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testClickTimeButton status=SKIP method=DashboardTest.testClickTimeButton()[pri:0, i...)</span>
-                <span class="method-start">173984 ms</span>
+                <span class="method-start">106877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.DashboardTest.testNavigateToDashboard())</span>
-                <span class="method-start">174409 ms</span>
+                <span class="method-start">106961 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDashboardPage</span>
-                <span class="method-start">185376 ms</span>
+                <span class="method-start">115968 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigateToDashboard</span>
-                <span class="method-start">185377 ms</span>
+                <span class="method-start">115969 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testNavigateToDashboard status=SKIP method=DashboardTest.testNavigateToDashboard()[...)</span>
-                <span class="method-start">185381 ms</span>
+                <span class="method-start">115976 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.java.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFields())</span>
+                <span class="method-start">117005 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFields</span>
+                <span class="method-start">118507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyFields status=SUCCESS method=LoginTest.testEmptyFields()[pri:0, instance:c...)</span>
+                <span class="method-start">123350 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFieldsPassword())</span>
+                <span class="method-start">123742 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFieldsPassword</span>
+                <span class="method-start">125444 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyFieldsPassword status=SUCCESS method=LoginTest.testEmptyFieldsPassword()[p...)</span>
+                <span class="method-start">131338 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testEmptyFieldsUsername())</span>
+                <span class="method-start">131906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEmptyFieldsUsername</span>
+                <span class="method-start">133600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testEmptyFieldsUsername status=SUCCESS method=LoginTest.testEmptyFieldsUsername()[p...)</span>
+                <span class="method-start">138181 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testInvalidPassword())</span>
+                <span class="method-start">138536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidPassword</span>
+                <span class="method-start">140150 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidPassword status=SUCCESS method=LoginTest.testInvalidPassword()[pri:0, in...)</span>
+                <span class="method-start">148855 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testInvalidUsername())</span>
+                <span class="method-start">149223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidUsername</span>
+                <span class="method-start">150783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testInvalidUsername status=SUCCESS method=LoginTest.testInvalidUsername()[pri:0, in...)</span>
+                <span class="method-start">158463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.testValidLogin())</span>
+                <span class="method-start">158972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">160466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin()[pri:0, instance:com...)</span>
+                <span class="method-start">166590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void com.example.java.testcases.LoginTest.userLogout())</span>
+                <span class="method-start">167119 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">userLogout</span>
+                <span class="method-start">168807 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=userLogout status=SUCCESS method=LoginTest.userLogout()[pri:0, instance:com.example...)</span>
+                <span class="method-start">179530 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.java.testcases.PIMTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.PIMTest.testAddNewEmployee())</span>
-                <span class="method-start">185968 ms</span>
+                <span class="method-start">180158 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPIMPage</span>
-                <span class="method-start">195005 ms</span>
+                <span class="method-start">190758 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddNewEmployee</span>
-                <span class="method-start">195006 ms</span>
+                <span class="method-start">192623 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testAddNewEmployee status=SKIP method=PIMTest.testAddNewEmployee()[pri:0, instance:...)</span>
-                <span class="method-start">195010 ms</span>
+                <span class="method-name">tearDown([TestResult name=testAddNewEmployee status=SUCCESS method=PIMTest.testAddNewEmployee()[pri:0, instan...)</span>
+                <span class="method-start">205410 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.PIMTest.testCheckEmployeeOnEmployeeList())</span>
-                <span class="method-start">195723 ms</span>
+                <span class="method-start">205802 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPIMPage</span>
-                <span class="method-start">204574 ms</span>
+                <span class="method-start">214264 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCheckEmployeeOnEmployeeList</span>
-                <span class="method-start">204575 ms</span>
+                <span class="method-start">216855 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testCheckEmployeeOnEmployeeList status=SKIP method=PIMTest.testCheckEmployeeOnEmplo...)</span>
-                <span class="method-start">204578 ms</span>
+                <span class="method-name">tearDown([TestResult name=testCheckEmployeeOnEmployeeList status=SUCCESS method=PIMTest.testCheckEmployeeOnEm...)</span>
+                <span class="method-start">219309 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp(public void com.example.java.testcases.PIMTest.testDeleteEmployeeOnTheEmployeeList())</span>
-                <span class="method-start">204776 ms</span>
+                <span class="method-start">219666 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPIMPage</span>
-                <span class="method-start">214854 ms</span>
+                <span class="method-start">228453 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testDeleteEmployeeOnTheEmployeeList</span>
-                <span class="method-start">214855 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testDeleteEmployeeOnTheEmployeeList status=SKIP method=PIMTest.testDeleteEmployeeOn...)</span>
-                <span class="method-start">214859 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">testDeleteEmployeeOnTheEmployeeList</span>
+                <span class="method-start">231069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeleteEmployeeOnTheEmployeeList status=FAILURE method=PIMTest.testDeleteEmploye...)</span>
+                <span class="method-start">249752 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
                 <span class="method-name">setUp(public void com.example.java.testcases.PIMTest.testNavigateToPIM())</span>
-                <span class="method-start">215652 ms</span>
+                <span class="method-start">250297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPIMPage</span>
-                <span class="method-start">223689 ms</span>
+                <span class="method-start">260314 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigateToPIM</span>
-                <span class="method-start">223701 ms</span>
+                <span class="method-start">262146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testNavigateToPIM status=SKIP method=PIMTest.testNavigateToPIM()[pri:0, instance:co...)</span>
-                <span class="method-start">223704 ms</span>
+                <span class="method-name">tearDown([TestResult name=testNavigateToPIM status=SUCCESS method=PIMTest.testNavigateToPIM()[pri:0, instance...)</span>
+                <span class="method-start">264133 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
