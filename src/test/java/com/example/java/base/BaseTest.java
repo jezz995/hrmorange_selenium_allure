@@ -34,12 +34,31 @@ public class BaseTest {
     private WebDriver createDriver(String browser) {
         switch (browser) {
             case "firefox":
-                return new FirefoxDriver(new FirefoxOptions().addArguments("--private"));
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                firefoxOptions.addArguments("--private");
+                firefoxOptions.addArguments("--headless"); // ✅ important for CI
+                return new FirefoxDriver(firefoxOptions);
+
             case "edge":
-                return new EdgeDriver(new EdgeOptions().addArguments("--inprivate"));
+                EdgeOptions edgeOptions = new EdgeOptions();
+                edgeOptions.addArguments("--inprivate");
+                edgeOptions.addArguments("--headless"); // ✅ for CI
+                return new EdgeDriver(edgeOptions);
+
             case "chrome":
             default:
-                return new ChromeDriver(new ChromeOptions().addArguments("--incognito"));
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--incognito");
+                chromeOptions.addArguments("--headless"); // ✅ required in CI
+                chromeOptions.addArguments("--no-sandbox"); // ✅ required in CI
+                chromeOptions.addArguments("--disable-dev-shm-usage"); // ✅ prevents crash
+                chromeOptions.addArguments("--disable-gpu");
+                chromeOptions.addArguments("--disable-extensions");
+                chromeOptions.addArguments("--remote-allow-origins=*");
+                chromeOptions.addArguments("--user-data-dir=/tmp/chrome-user-data-"
+                        + System.currentTimeMillis()); // ✅ fixes your error
+
+                return new ChromeDriver(chromeOptions);
         }
     }
 
