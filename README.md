@@ -1,7 +1,8 @@
 # hrmorange_selenium_allure
 
 =======
-updates 23-08-2025 - fixing PIMTest and adding more locators to PIMpage 
+updates 23-08-2025 - fixing PIMTest and adding more locators to PIMpage
+updates 24-08-2025 - adding github workflow for CI/CD integrations
 
 # OrangeHRM Automation Testing Project
 
