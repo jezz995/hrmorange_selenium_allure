@@ -1,6 +1,7 @@
 # hrmorange_selenium_allure
 
 =======
+updates 23-08-2025 - fixing PIMTest and adding more locators to PIMpage 
 
 # OrangeHRM Automation Testing Project
 
@@ -8,6 +9,8 @@
 
 This project contains automated UI tests for the OrangeHRM demo application using Selenium WebDriver with Java and TestNG.  
 Test reports are generated with Allure to provide detailed insights and history trends.
+
+i will update this project along the way
 
 ---
 
